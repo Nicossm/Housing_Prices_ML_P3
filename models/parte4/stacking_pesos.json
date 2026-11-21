@@ -1,0 +1,29 @@
+{
+ "pesos": {
+  "Lasso + XGBoost": {
+   "bases": [
+    "Lasso",
+    "XGBoost"
+   ],
+   "coef": [
+    0.4491,
+    0.5528
+   ],
+   "intercepto": -0.0219
+  },
+  "Lasso + RF + XGBoost": {
+   "bases": [
+    "Lasso",
+    "Random Forest",
+    "XGBoost"
+   ],
+   "coef": [
+    0.4409,
+    0.0288,
+    0.5352
+   ],
+   "intercepto": -0.0585
+  }
+ },
+ "segundos": 36.4
+}

@@ -1,0 +1,70 @@
+{
+  "modelo": "Lasso (alpha P2)",
+  "descripcion": "Pipeline completo (MapeoOrdinal + preparación + modelo) dentro de TransformedTargetRegressor (log1p / expm1). Recibe las 79 variables sin codificar de ames_clean.csv y devuelve el precio en USD.",
+  "parametros": {
+    "alpha": 0.00017433288221999874
+  },
+  "columnas_en_uso": 105,
+  "escenario_seleccion": "b",
+  "regla": "cumple los seis KPI en test real; menor RMSE val; a menos de 1 punto de R² val, el más interpretable",
+  "metricas_cv": {
+    "rmse_val": 20174.2,
+    "desv_rmse_val": 990.7,
+    "mae_val": 13751.8,
+    "mape_val_pct": 8.077,
+    "rmse_train": 18812.4,
+    "r2_train": 0.9396,
+    "r2_val": 0.9297,
+    "brecha_r2_pts": 0.99,
+    "rmse_val_por_fold": [
+      19870.5,
+      21604.4,
+      20958.5,
+      19624.4,
+      18813.2
+    ]
+  },
+  "metricas_cv_folds_nuevos": {
+    "rmse_val": 20243.1,
+    "r2_val": 0.9299
+  },
+  "metricas_test": {
+    "Test real": {
+      "R²": 0.9477,
+      "RMSE": 19240.7677,
+      "MAE": 12406.9279,
+      "MAPE %": 6.7718,
+      "Brecha R² train-test (pts)": -0.9034,
+      "Brecha MAPE barrios (pts)": 6.1283,
+      "cumple_los_seis": true
+    },
+    "Venta normal impuesta": {
+      "R²": 0.9485,
+      "RMSE": 19083.9692,
+      "MAE": 12462.0773,
+      "MAPE %": 6.9251,
+      "Brecha R² train-test (pts)": -0.9884,
+      "Brecha MAPE barrios (pts)": 6.2465,
+      "cumple_los_seis": true
+    }
+  },
+  "uso": {
+    "venta": "imponer_venta_normal() antes de predecir",
+    "yr_sold": 2010,
+    "rango_orientativo": [
+      0.8895,
+      1.135
+    ],
+    "alcance": "viviendas en zonas residenciales de Ames; precios 2006-2010"
+  },
+  "entrenado_con": "2314 casas de train",
+  "versiones": {
+    "python": "3.13.6",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "xgboost": "3.4.1",
+    "joblib": "1.6.0"
+  },
+  "fecha": "2026-11-20"
+}

@@ -1,0 +1,45 @@
+{
+ "folds": [
+  {
+   "params": {
+    "alpha": 0.00017433288221999874
+   },
+   "rmse_interno": 20433.2,
+   "rmse_externo": 19870.53,
+   "cumplian_brecha": 30
+  },
+  {
+   "params": {
+    "alpha": 0.0001268961003167922
+   },
+   "rmse_interno": 20303.7,
+   "rmse_externo": 21555.47,
+   "cumplian_brecha": 30
+  },
+  {
+   "params": {
+    "alpha": 0.0001268961003167922
+   },
+   "rmse_interno": 20181.36,
+   "rmse_externo": 20992.64,
+   "cumplian_brecha": 30
+  },
+  {
+   "params": {
+    "alpha": 0.0001268961003167922
+   },
+   "rmse_interno": 20648.85,
+   "rmse_externo": 19556.36,
+   "cumplian_brecha": 30
+  },
+  {
+   "params": {
+    "alpha": 0.00017433288221999874
+   },
+   "rmse_interno": 20782.31,
+   "rmse_externo": 18813.25,
+   "cumplian_brecha": 30
+  }
+ ],
+ "segundos": 16.2
+}

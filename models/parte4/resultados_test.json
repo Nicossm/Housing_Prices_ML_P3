@@ -1,0 +1,161 @@
+{
+ "descripcion": "Test abierto una sola vez (sección 48). Modelos entrenados con todo train.",
+ "kpi": {
+  "R²": [
+   "≥",
+   0.85
+  ],
+  "RMSE": [
+   "≤",
+   30000.0
+  ],
+  "MAE": [
+   "≤",
+   20000.0
+  ],
+  "MAPE %": [
+   "≤",
+   12.0
+  ],
+  "Brecha R² train-test (pts)": [
+   "≤",
+   5.0
+  ],
+  "Brecha MAPE barrios (pts)": [
+   "≤",
+   8.0
+  ]
+ },
+ "resultados": {
+  "Test real": {
+   "Ridge": {
+    "R²": 0.9486,
+    "RMSE": 19075.5016,
+    "MAE": 12340.0182,
+    "MAPE %": 6.7422,
+    "Brecha R² train-test (pts)": -0.8543,
+    "Brecha MAPE barrios (pts)": 6.242,
+    "cumple_los_seis": true
+   },
+   "Lasso": {
+    "R²": 0.948,
+    "RMSE": 19180.8387,
+    "MAE": 12382.9549,
+    "MAPE %": 6.7679,
+    "Brecha R² train-test (pts)": -0.8719,
+    "Brecha MAPE barrios (pts)": 6.3257,
+    "cumple_los_seis": true
+   },
+   "Lasso (alpha P2)": {
+    "R²": 0.9477,
+    "RMSE": 19240.7677,
+    "MAE": 12406.9279,
+    "MAPE %": 6.7718,
+    "Brecha R² train-test (pts)": -0.9034,
+    "Brecha MAPE barrios (pts)": 6.1283,
+    "cumple_los_seis": true
+   },
+   "Random Forest": {
+    "R²": 0.9216,
+    "RMSE": 23547.6328,
+    "MAE": 14280.109,
+    "MAPE %": 7.9375,
+    "Brecha R² train-test (pts)": 1.719,
+    "Brecha MAPE barrios (pts)": 12.2169,
+    "cumple_los_seis": false
+   },
+   "XGBoost": {
+    "R²": 0.953,
+    "RMSE": 18240.7891,
+    "MAE": 11668.5449,
+    "MAPE %": 6.4644,
+    "Brecha R² train-test (pts)": 1.5874,
+    "Brecha MAPE barrios (pts)": 6.3799,
+    "cumple_los_seis": true
+   },
+   "Votación": {
+    "R²": 0.9541,
+    "RMSE": 18014.8314,
+    "MAE": 11461.924,
+    "MAPE %": 6.2994,
+    "Brecha R² train-test (pts)": 0.4566,
+    "Brecha MAPE barrios (pts)": 5.6704,
+    "cumple_los_seis": true
+   },
+   "Stacking": {
+    "R²": 0.9547,
+    "RMSE": 17903.2459,
+    "MAE": 11417.9258,
+    "MAPE %": 6.2836,
+    "Brecha R² train-test (pts)": 0.566,
+    "Brecha MAPE barrios (pts)": 5.7291,
+    "cumple_los_seis": true
+   }
+  },
+  "Venta normal impuesta": {
+   "Ridge": {
+    "R²": 0.9494,
+    "RMSE": 18926.1027,
+    "MAE": 12395.7382,
+    "MAPE %": 6.8963,
+    "Brecha R² train-test (pts)": -0.9346,
+    "Brecha MAPE barrios (pts)": 6.6272,
+    "cumple_los_seis": true
+   },
+   "Lasso": {
+    "R²": 0.9489,
+    "RMSE": 19009.555,
+    "MAE": 12436.7203,
+    "MAPE %": 6.9192,
+    "Brecha R² train-test (pts)": -0.9644,
+    "Brecha MAPE barrios (pts)": 6.3549,
+    "cumple_los_seis": true
+   },
+   "Lasso (alpha P2)": {
+    "R²": 0.9485,
+    "RMSE": 19083.9692,
+    "MAE": 12462.0773,
+    "MAPE %": 6.9251,
+    "Brecha R² train-test (pts)": -0.9884,
+    "Brecha MAPE barrios (pts)": 6.2465,
+    "cumple_los_seis": true
+   },
+   "Random Forest": {
+    "R²": 0.9214,
+    "RMSE": 23583.6327,
+    "MAE": 14315.7953,
+    "MAPE %": 7.9838,
+    "Brecha R² train-test (pts)": 1.743,
+    "Brecha MAPE barrios (pts)": 13.0434,
+    "cumple_los_seis": false
+   },
+   "XGBoost": {
+    "R²": 0.9564,
+    "RMSE": 17558.6055,
+    "MAE": 11507.0107,
+    "MAPE %": 6.5427,
+    "Brecha R² train-test (pts)": 1.2422,
+    "Brecha MAPE barrios (pts)": 9.2996,
+    "cumple_los_seis": false
+   },
+   "Votación": {
+    "R²": 0.9563,
+    "RMSE": 17583.6113,
+    "MAE": 11394.0789,
+    "MAPE %": 6.4125,
+    "Brecha R² train-test (pts)": 0.2396,
+    "Brecha MAPE barrios (pts)": 7.4108,
+    "cumple_los_seis": true
+   },
+   "Stacking": {
+    "R²": 0.957,
+    "RMSE": 17448.7305,
+    "MAE": 11337.3803,
+    "MAPE %": 6.3922,
+    "Brecha R² train-test (pts)": 0.3389,
+    "Brecha MAPE barrios (pts)": 7.5176,
+    "cumple_los_seis": true
+   }
+  }
+ }
+}
